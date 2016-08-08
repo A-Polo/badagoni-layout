@@ -71,32 +71,38 @@
                 <!-- Content -->
                 <div class="col-justify">
                     <h1 class="main-title">Оформление заказа</h1>
-                    <h4>Заполните, пожалуйста поля</h4>
-                    <form class="formalization-form" method="post" action="">
-                        <div class="formalization-form-col">
-                            <input class="formalization-form-col_item" type="text" name="name" placeholder="Ф.И.О.*"
-                                   required>
-                            <input class="formalization-form-col_item" type="email" name="email" placeholder="E-mail">
-                            <input class="formalization-form-col_item" type="tel" name="phone" placeholder="Телефон*" required>
-                        </div>
-                        <div class="formalization-form-col">
-                            <input class="formalization-form-col_item" type="text" name="city" placeholder="Город*" required>
-                            <input class="formalization-form-col_item" type="text" name="address" placeholder="Адресс" required>
-                            <select class="formalization-form-col_item" name="delivery">
-                                <option>Способ доставки</option>
-                                <option>Способ доставки</option>
-                                <option>Способ доставки</option>
-                                <option>Способ доставки</option>
-                            </select>
-                        </div>
-                        <div class="formalization-form-col">
-                            <select class="formalization-form-col_item" name="payment">
-                                <option>Способ оплаты</option>
-                                <option>Способ оплаты</option>
-                                <option>Способ оплаты</option>
-                                <option>Способ оплаты</option>
-                            </select>
-                            <textarea class="formalization-form-col_item" name="message" placeholder="Примечания"></textarea>
+                    <h4 class="formalization-title">Заполните, пожалуйста поля</h4>
+                    <form class="formalization-form main-form" method="post" action="">
+                        <div class="flex-wrap">
+                            <div class="formalization-form-col">
+                                <input class="formalization-form-col_item" type="text" name="name" placeholder="Ф.И.О.*"
+                                       required>
+                                <input class="formalization-form-col_item" type="email" name="email" placeholder="E-mail">
+                                <input class="formalization-form-col_item" type="tel" name="phone" placeholder="Телефон*" required>
+                            </div>
+                            <div class="formalization-form-col formalization-form-col-middle">
+                                <input class="formalization-form-col_item" type="text" name="city" placeholder="Город*" required>
+                                <input class="formalization-form-col_item" type="text" name="address" placeholder="Адресс" required>
+                                <select class="formalization-form-col_item" name="delivery">
+                                    <option>Способ доставки</option>
+                                    <option>Способ доставки</option>
+                                    <option>Способ доставки</option>
+                                    <option>Способ доставки</option>
+                                </select>
+                            </div>
+                            <div class="formalization-form-col">
+                                <select class="formalization-form-col_item" name="payment">
+                                    <option>Способ оплаты</option>
+                                    <option>Способ оплаты</option>
+                                    <option>Способ оплаты</option>
+                                    <option>Способ оплаты</option>
+                                </select>
+                                <textarea class="formalization-form-col_item" name="message" placeholder="Примечания"></textarea>
+                                <input class="main-form-btn" type="submit" value="Подтвердить">
+                            </div>
+                            <div class="formalization-form-col formalization-form-col-last">
+                                <img src="images/car.png" width="221" height="130" alt="car">
+                            </div>
                         </div>
                     </form>
                 </div>

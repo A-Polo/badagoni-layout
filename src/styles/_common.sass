@@ -740,10 +740,19 @@ textarea
 
 //Formalization
 .formalization-form
-  display: flex
-  flex-direction: row
+  .flex-wrap
+    margin-top: 0
+    margin-bottom: 40px
+.formalization-title
+  margin: 40px 0
+.formalization-form-col
+  flex: 1
+.formalization-form-col-middle
+  flex: 2
 .formalization-form-col
   margin-right: 20px
+.formalization-form-col-last
+  padding: 0 50px
 .formalization-form-col_item
   display: block
   margin: 10px 0
@@ -754,6 +763,8 @@ textarea
   font-family: $font-light
   +border-radius(2px)
   +box-sizing(border-box)
+textarea.formalization-form-col_item
+  height: 65px
 
 //Footer
 .footer
