@@ -867,3 +867,73 @@ textarea.formalization-form-col_item
     background-color: #9b0028
     color: #ff6666
     padding: 5px 9px
+
+
+//Popups
+.popup-box
+  position: absolute
+  background: #f7f7f7
+  display: none
+  font-family: $font-light
+  text-align: center
+  z-index: 9999999
+
+
+.popup-box
+  .close
+    position: absolute
+    top: 5px
+    right: 5px
+    font-family: $font-light
+    cursor: pointer
+    color: #434343
+    border: 1px solid #ccc
+    padding: 0 5px
+    font-size: 20px
+    &:hover
+      color: #000
+  h2
+    padding: 0
+    margin: 10px 0
+    font-family: $font-condensed
+    font-size: 20px
+  .top
+    padding: 20px
+  .bottom
+    background: #f7f7f7
+    padding: 20px
+  .popup-btn
+    margin: 0 20px
+    background-color: #9b0028
+    padding: 7px
+    text-transform: uppercase
+    color: #fff
+  .popup-btn-cart
+    background-color: #cc9933
+  .main-form-btn
+    float: none
+    padding: 10px 25px
+    margin: 0 auto
+  .main-form
+    margin: 0
+  input
+    margin: 10px 0
+    display: block
+    padding: 5px 10px
+    +box-sizing(border-box)
+  .form-item
+    width: 100%
+    border: 1px solid #ccc
+    +border-radius(2px)
+
+#blackout
+  background: rgba(0,0,0,0.3)
+  position: absolute
+  top: 0
+  overflow: hidden
+  z-index: 999999
+  left: 0
+  display: none
+
+//Responsive
+
